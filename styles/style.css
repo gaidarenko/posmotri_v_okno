@@ -106,6 +106,7 @@ ol {
   font-size: 18px;
   font-weight: 400;
   line-height: 22px;
+  margin-bottom: 5px;
 }
 
 .title {
@@ -137,4 +138,65 @@ ol {
 .content__video-card-description {
   font-weight: 400;
   line-height: 16px;
+}
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.search-form__fieldset {
+  border: none;
+/*  flex-grow: 1; */
+}
+
+.search-form__textfield {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  background-color: transparent;
+  border: none;
+  border-bottom-color: #fff;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-top-color: #fff;
+  border-top-width: 1px;
+  border-top-style: solid;
+ /* margin-top: 5px; */
+  appearance: none;
+  width: 225px;
+  color: #fff;
+}
+
+.search-form__submit-button {
+ /* flex-grow: 1; */
+  align-self: flex-end;
+  width: 194px;
+}
+
+.button {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  background-color: transparent;
+  color: #fff;
+  line-height: 22px;
+  border: 1px solid #fff;
+  padding: 6px 0 6px 0;
+}
+
+.more-button {
+  width: 100%;
+}
+
+.search-form__label-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
 }
