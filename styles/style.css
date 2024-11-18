@@ -44,7 +44,6 @@ ol {
 .content {
   display: flex;
   width: 1140px;
-  height: 534px;
   margin: auto;
   gap: 30px;
   align-items: flex-end;
@@ -71,11 +70,11 @@ ol {
   position: relative;
   width: 711px;
   height: 386px;
-  margin-bottom: 16px;
+  margin-bottom: 15px;
 }
 
 .result__video {
-  object-fit: fill;
+  object-fit: cover;
   width: 100%;
   height: 100%;
 }
@@ -96,6 +95,7 @@ li:has(.more-button) {
 }
 
 .content__video-card-thumbnail {
+  object-fit: cover;
   width: 192px;
   height: 103px;
   display: block;
@@ -119,12 +119,12 @@ li:has(.more-button) {
   font-size: 75px;
   line-height: 70px;
   text-transform: uppercase;
-  margin-bottom: 24px;
+  margin-bottom: 23px;
   margin-top: 3px;
 }
 
 .content__accent {
-  opacity: 0.3;
+  color: #545050;
 }
 
 .content__card-link {
@@ -158,6 +158,7 @@ li:has(.more-button) {
 
 .search-form__fieldset {
   border: none;
+  padding-bottom: 1px;
 }
 
 .search-form__textfield {
@@ -194,6 +195,10 @@ li:has(.more-button) {
   border: 1px solid #fff;
   padding: 5px 0 5px 0;
   cursor: pointer;
+}
+
+.button:focus {
+  outline: none;
 }
 
 .button:hover {
@@ -254,6 +259,10 @@ li:has(.more-button) {
 
 .search-form__label:hover:has(.search-form__textfield) {
   text-decoration: none;
+}
+
+.search-form__textfield:focus {
+  outline: none;
 }
 
 .search-form__textfield:focus-visible {
