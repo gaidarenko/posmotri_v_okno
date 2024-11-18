@@ -246,7 +246,7 @@ li:has(.more-button) {
   cursor: pointer;
 }
 
-.search-form__label:hover {
+.search-form__label:hover .search-form__label-text {
   text-decoration: underline;
   text-underline-offset: 2px;
   text-decoration-thickness: 1px;
@@ -255,10 +255,6 @@ li:has(.more-button) {
 .search-form__label:has(:focus-visible) {
   outline: 1px solid #fff;
   outline-offset: 2px;
-}
-
-.search-form__label:hover:has(.search-form__textfield) {
-  text-decoration: none;
 }
 
 .search-form__textfield:focus {
